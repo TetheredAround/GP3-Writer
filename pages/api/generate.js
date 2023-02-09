@@ -8,12 +8,17 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Write a game idea based on the following specifications:
+Write a software based on the following specifications:
+`
+
+const basePromptSuffix =
+`
+Include a short introduction, the main objective, and its features.
 `
 
 const generateAction = async (req, res) => {
   // Run first prompt
-  console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
+  console.log(`API: ${basePromptPrefix}${req.body.userInput}${basePromptSuffix}`)
 
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',

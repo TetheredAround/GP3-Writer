@@ -35,19 +35,19 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Developer Assistant | TetheredAround </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Game Development Assistant</h1>
+            <h1>Developer Assistant</h1>
           </div>
           <div className="header-subtitle">
             <h2>A Project by TetheredAround via GPT-3</h2>
           </div>
         </div>
         <div className="prompt-container">
-          <textarea className="prompt-box" placeholder="Enter Game Specifications Here..." value={userInput} onChange={onUserChangedText}/>;
+          <textarea className="prompt-box" placeholder="Enter Software Specifications Here..." value={userInput} onChange={onUserChangedText}/>;
         </div>
         <div className="prompt-buttons">
           <a
